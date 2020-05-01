@@ -782,3 +782,11 @@ img {
 	background-color: #d63c5d;
 	opacity: 1;
 }
+@media screen and (max-width: 768px) {
+	#zpz{
+		display: block;
+		width: 100% !important;
+		margin: 0 auto !important;
+		border-radius:0px !important;
+		}
+}

@@ -14,6 +14,7 @@
 <link href="css/owl.theme.css" rel="stylesheet" type="text/css">
 <link href="css/animate.css" rel="stylesheet" type="text/css">
 <link href="css/jpushmenu.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/hls.js/latest/hls.min.js"></script>
 </head>
 <body class="push-body">
 <header id="main-navigation">
@@ -157,6 +158,20 @@
             <h1>我的部分作品</h1>
           </div>
         </div>
+		<div class="zpz">
+			<video id="zpz" src="" width="60%" height="50%" controls="controls" poster="" style="border-radius:10px ;"></video>
+			<script type="text/javascript">
+				if(Hls.isSupported()) {
+						    var video = document.getElementById('zpz');
+						    var hls = new Hls();
+						    hls.loadSource('https://www5.laqddc.com/hls/2020/04/16/1eG1K8ZS/playlist.m3u8');
+						    hls.attachMedia(video);
+						    hls.on(Hls.Events.MANIFEST_PARSED,function() {
+						      video.pause();
+						  });
+						 }
+			</script>
+		</div>
         <div class="col-xs-12 work_filter text-center">
           <div class="row">
             <div class="animate fadeInLeft">
